@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.container {
+    width: 600px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto; 
+}
+.cat,.dog,.snake,.rabbit {
+    display: inline-block;
+    width: 125px;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 12px 0;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+.animal-img {
+    display: none;
+    width: 350px; 
+}
+
+/* show the corresponding image when hovering over the container */
+.cat:hover .cat-img,
+.dog:hover .dog-img,
+.snake:hover .snake-img,
+.rabbit:hover .rabbit-img {
+    display: block;
+}
